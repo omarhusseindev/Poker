@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Poker Game</title>
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" /> </head>
+
+<body>
+	<header>
+		<nav>
+			<ul class="nav">
+				<li><a href="index.html">Poker Home</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="poker-container" id="poker-game">
+		<h1 class="poker-title">Texas Hold em'</h1>
+		<br />
+		<div class="table">
+			<div class="cpu table-row">
+				<div class="cpu-info box">
+					<div class="name">CPU</div>
+				</div>
+				<div class="cpu-hand">
+					<div class="card cpu-card"></div>
+					<div class="card cpu-card"></div>
+				</div>
+				<div class="message">
+					<p id="cpu-hand"></p>
+				</div>
+			</div>
+			<!-- Table cards-->
+			<div id="table-cards" class="table-cards table-row">
+				<div class="card table-card">*</div>
+				<div class="card table-card">*</div>
+				<div class="card table-card">*</div>
+				<div class="card table-card">*</div>
+				<div class="card table-card">*</div>
+			</div>
+			<!-- Player row-->
+			<div class="player table-row">
+				<div class="player-info box">
+					<div class="name">Player</div>
+					<div id="player-money" class="money">£100</div>
+				</div>
+				<div class="player-hand">
+					<div class="card player-card"></div>
+					<div class="card player-card"></div>
+				</div>
+				<div class="message">
+					<p id="player-message">Waiting for deal</p>
+					<p id="player-hand"></p>
+					<p></p>
+				</div>
+			</div>
+			<!-- Buttons row-->
+			<div class="controls">
+				<div id="in-game-controls" class="table-row">
+					<button class="bet">Bet £5</button>
+					<button class="raise">Bet £20</button>
+					<button class="allIn">Bet All</button>
+				</div>
+				<div id="pregame-controls" class="table-row">
+					<button class="deal">Deal</button>
+					<a href="index.html">
+						<button>exit</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="column">
+					<h6>About</h6>
+					<p class="text-justify">Project </p>
+				</div>
+				<div class="column"> </div>
+				<div class="column">
+					<h6>Quick Links</h6>
+					<ul class="footer-links">
+						<li><a href="">About Us</a></li>
+						<li><a href="">Contact Us</a></li>
+						<li><a href="">Contribute</a></li>
+						<li><a href="">Privacy Policy</a></li>
+						<li><a href="">Sitemap</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr> </div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-6 col-xs-12">
+					<p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by <a href="#">Omar Hussein</a>. </p>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<ul class="social-icons">
+						<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+						<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+	<script src="../dist/poker.js"></script>
+	<script src="../dist/index.js"></script>
+</body>
+
+</html>
